@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inloggen</title>
+</head>
+<body>
+<p>Een moment geduld a.u.b.</p>
+<script>
+  let url = new URL(window.location);
+
+  if (url.searchParams.has('access_token')) {
+    localStorage.setItem('access_token', url.searchParams.get('access_token'));
+  }
+
+  window.location.href = '/';
+</script>
+</body>
+</html>
