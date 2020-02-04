@@ -1,0 +1,20 @@
+<table>
+  <thead>
+  <tr>
+    <th>Tijd</th>
+    <th>Student</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let slot of slots">
+    <td>{{ slot.time }}</td>
+    <td>
+      <button *ngIf="!slot.studentid" (click)="selectSlot(slot.id)" type="button" class="btn btn-primary">Selecteer</button>
+      <span *ngIf="slot.studentid">{{ slot.studentid }}</span>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<!-- FOR TESTING ONLY -->
+<button class="btn btn-link" (click)="resetSlots()">Reset</button>
