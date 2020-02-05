@@ -14,6 +14,6 @@ export class LoginComponent implements OnInit {
   }
 
   getLoginUrl() {
-    return `${environment.api_base}/auth/avans?callback=http://localhost:4200/callback.html`;
+    return `${environment.api_base}/auth/avans?callback=${environment.callback}`;
   }
 }

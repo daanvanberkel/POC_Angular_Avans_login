@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  api_base: 'https://avans_poc_api.daanvanberkel.nl'
+  api_base: 'https://avans_poc_api.daanvanberkel.nl',
+  callback: 'https://avans_poc.daanvanberkel.nl/callback.html'
 };
 
 /*
