@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_base: 'http://localhost:3000'
+  api_base: 'https://avans_poc_api.daanvanberkel.nl'
 };
 
 /*
